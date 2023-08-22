@@ -45,10 +45,16 @@
         font-family: "Roboto", sans-serif;
       }
     </style>
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/2170158f42.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body class="font-roboto">
-    <header class="bg-[#FFFBF0] py-10 px-20">
-      <nav class="flex justify-between mb-5">
+    <header class="bg-[#FFFBF0] py-10 px-36">
+      <nav class="flex justify-between mb-3">
         <div>
           <h2 class="text-3xl font-bold font-montserrat">
             <span class="text-g-color">Penguin</span> Fashion
@@ -63,14 +69,18 @@
           </ul>
         </div>
       </nav>
-      <div>
+      <div class="flex gap-32 items-center">
         <div>
-          <h1>Be the Penguins of Winter</h1>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
+          <h1 class="font-bebas text-7xl">
+            <span class="text-y-color">Be the Penguins</span><br />of Winter
+          </h1>
+          <p class="my-1">
+            Lorem Ipsum is simply dummy text of the printing <br />and
+            typesetting industry.
           </p>
-          <button>BUY NOW</button>
+          <button class="btn bg-g-color text-white">
+            <i class="fa-solid fa-cart-shopping"></i>BUY NOW
+          </button>
         </div>
 
         <img src="images/model.png" alt="" />
