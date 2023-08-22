@@ -4,6 +4,78 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Penguin Fashion</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "g-color": "#A4BC46",
+              "y-color": "#FABE4C",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .font-bebas {
+        font-family: "Bebas Neue", sans-serif;
+      }
+
+      .font-montserrat {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .font-roboto {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
   </head>
-  <body></body>
+  <body class="font-roboto">
+    <header class="bg-[#FFFBF0] py-10 px-20">
+      <nav class="flex justify-between mb-5">
+        <div>
+          <h2 class="text-3xl font-bold font-montserrat">
+            <span class="text-g-color">Penguin</span> Fashion
+          </h2>
+        </div>
+        <div>
+          <ul class="flex gap-5 font-medium text-sm">
+            <li>Home</li>
+            <li>Product</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+      </nav>
+      <div>
+        <div>
+          <h1>Be the Penguins of Winter</h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <button>BUY NOW</button>
+        </div>
+
+        <img src="images/model.png" alt="" />
+      </div>
+    </header>
+    <main></main>
+  </body>
 </html>
